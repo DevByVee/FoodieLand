@@ -1,0 +1,35 @@
+/* Large Screen */
+@media screen and (max-width: 1279px) {}
+
+/* Medium Screens */
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 40px 20px;
+  }
+
+  .logo{
+    width: 110px;
+  }
+
+  .page-links{
+    gap: 2rem;
+  }
+
+  .socials{
+    gap: 1rem;
+  }
+}
+
+/* Tablet Screens */
+@media screen and (max-width: 768px) {
+  .nav-links{
+    display: block;
+  }
+
+  .page-links{
+    display: block;
+  }
+}
+
+/* Small Screens (mobile phone) */
+@media screen and (max-width: 480px) {}
