@@ -1,5 +1,15 @@
 /* Large Screen */
-@media screen and (max-width: 1279px) {}
+@media screen and (max-width: 1279px) {
+
+   .logo-wrap{
+    width: 27%;
+  }
+
+  .nav-links{
+    width: 73%;
+  }
+
+}
 
 /* Medium Screens */
 @media screen and (max-width: 1024px) {
@@ -7,8 +17,16 @@
     padding: 40px 20px;
   }
 
+  .logo-wrap{
+    width: 27%;
+  }
+
   .logo{
     width: 110px;
+  }
+
+  .nav-links{
+    width: 73%;
   }
 
   .page-links{
@@ -22,13 +40,62 @@
 
 /* Tablet Screens */
 @media screen and (max-width: 768px) {
-  .nav-links{
-    display: block;
+
+  header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
   }
 
+  .logo-wrap{
+    width: 50%;
+  }
+
+  .nav-links{
+    display: block;
+    /* width: 50%; */
+    position: fixed;
+    top: 11%;
+    right: 0; 
+    width: 200px; 
+    background-color: var(--light-blue);
+    font-size: 1.8rem;
+    padding: 15px;
+    border-radius: 15px;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden; 
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+  .nav-links.show{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  /* .nav-links.hide {
+    transform: translateX(100%);  
+    opacity: 0;
+    visibility: hidden;
+  } */
+  .toggle-icons{
+    display: flex;
+  }
+
+  .menu{
+    font-size: 1.5rem;
+  }
+
+  .close{
+    display: none;
+    font-size: 1.5rem;
+  }
   .page-links{
     display: block;
+    padding-bottom: 15px;
   }
+
+  
 }
 
 /* Small Screens (mobile phone) */

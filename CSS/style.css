@@ -12,14 +12,23 @@
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+  width: 100%;
 }
+
+/* Header Section */
 
 header{
   margin: 20px 0px;
   padding: 30px 40px;
   border-bottom: 1px solid var(--light-grey);
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
+.logo-wrap{
+  width: 30%;
+}
 .logo{
   width: 130px;
 }
@@ -27,7 +36,11 @@ header{
 .nav-links{
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
+  width: 70%;
+}
+
+.toggle-icons{
+  display: none;
 }
 
 .page-links{
@@ -51,3 +64,44 @@ header{
   gap: 2rem;
   font-size: 1.3rem;
 }
+
+/* End of Header section */
+
+
+/* Hero Section */
+.hero{
+  padding: 20px 40px;
+}
+
+.hero-wrap{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-grow: 1;
+}
+
+.wrap1{
+  width: 50%;
+  padding: 0px 20px;
+  background-color: var(--light-blue);
+}
+
+.wrap2{
+  width: 45%;
+  display: flex;
+}
+
+.wrap2 .chicken{
+  width: 600px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.wrap2 .badge{
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 33%;
+  left: 45%;
+}
+
+/* End of Hero Section */
