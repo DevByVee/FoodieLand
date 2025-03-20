@@ -2,16 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 :root {
   --light-blue: #E7FAFE;
   --light-grey: #dedcdc;
   --black: #000000;
+  --white: #FFFFFF;
+  --darker-grey: #6d787c;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
   width: 100%;
 }
 
@@ -81,19 +83,104 @@ header{
 
 .wrap1{
   width: 50%;
-  padding: 0px 20px;
+  padding: 0px 30px;
   background-color: var(--light-blue);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.hot{
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 8px;
+  border: var(--white);
+  border-radius: 20px;
+  margin: 40px 0px;
+  box-shadow: 0 8px 25px rgba(41, 64, 70, 0.3);
+  font-weight: 500;
+}
+
+.wrap1 h2{
+  font-size: 3.5rem;
+  padding: 0 0 30px 0;
+}
+.wrap1 p{
+  color: var(--darker-grey);
+  font-weight: 100;
+  line-height: 2;
+  padding-bottom: 20px;
+}
+
+.timer-fork{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 80px;
+}
+.timer-fork .timer, .fork{
+  display: flex;
+  align-items: center;
+  padding: 8px 11px;
+  border: var(--darker-blue);
+  background-color: #c5dadf;
+  border-radius: 20px;
+  gap: 0.4rem;
+}
+
+.time, .utensils{
+  font-size: 1.1rem;
+}
+
+.name-view{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.name{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name-wrap h4{
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding-bottom: 5px;
+}
+
+.name-wrap h5{
+  color: var(--darker-grey);
+  font-size: 0.8rem;
+}
+
+.view{
+  display: flex;
+  gap: 1rem;
+  background-color: var(--black);
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.view h3{
+  font-size: 0.8rem;
 }
 
 .wrap2{
-  width: 45%;
+  width: 50%;
   display: flex;
 }
 
 .wrap2 .chicken{
-  width: 600px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  width: 100% ;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  object-fit: cover;
 }
 
 .wrap2 .badge{

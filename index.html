@@ -9,33 +9,11 @@
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/mediaquery.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
-  <!-- <link rel="stylesheet" href="package/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="package/swiper-bundle.min.css">
 </head>
 <body>
   <!-- header -->
-  <header>
-    <div class="logo-wrap">
-      <img src="Images/Foodieland..png" alt="Site-Logo" class="logo">
-    </div>
-    <nav class="nav-links">
-      <ul class="page-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About us</a></li>
-      </ul>
-      <div class="socials">
-        <i class="ri-facebook-fill"></i>
-        <i class="ri-twitter-fill"></i>
-        <i class="ri-instagram-line"></i>
-      </div>
-    </nav>
-     <div class="toggle-icons">
-        <i class="ri-menu-2-line menu"></i>
-        <i class="ri-close-large-fill close"></i>
-      </div>
-  </header>
+    <div id="header-container"></div>
   
   <!-- HERO SECTION -->
   <section class="hero">
@@ -47,39 +25,81 @@
              <button class="hot">
               <img src="Images/image 14.png" alt="scroll-image">
               <h4>Hot Recipes</h4>
-            </button>
-            <h2>Spicy delicious chicken wings</h2>
-            <p> 
-              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim 
-            </p>
+              </button>
+              <h2>Spicy delicious chicken wings</h2>
+              <p> 
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim 
+              </p>
 
-            <div class="timer-fork">
-              <button class="timer">
-                <i class="ri-timer-fill"></i>
-                <h4>30 Minutes</h4>
-              </button>
-              <button class="fork">
-                <i class="ri-restaurant-fill"></i>
-                <h4>Chicken</h4>
-              </button>
-            </div>
-            <div class="name-view">
-              <div class="name">
-                <img src="Images/Ellipse 2.png" alt="man_image">
-                <div class="name-wrap">
-                  <h4>John Smith</h4>
-                  <h5>15 March 2022</h5>
+              <div class="timer-fork">
+                <button class="timer">
+                  <i class="ri-timer-fill time"></i>
+                  <h4>30 Minutes</h4>
+                </button>
+                <button class="fork">
+                  <i class="ri-restaurant-fill utensils"></i>
+                  <h4>Chicken</h4>
+                </button>
+              </div>
+              <div class="name-view">
+                <div class="name">
+                  <img src="Images/Ellipse 2.png" alt="man_image">
+                  <div class="name-wrap">
+                    <h4>John Smith</h4>
+                    <h5>15 March 2022</h5>
+                  </div>
+                </div>
+                <div class="view">
+                  <h3>View Recipes</h3>
+                  <i class="ri-play-circle-line"></i>
                 </div>
               </div>
-              <div class="view">
-                <h3>View Recipes</h3>
-                <i class="ri-play-circle-line"></i>
-              </div>
-            </div>
            </div>
            <div class="wrap2">
               <img src="Images/Badge.png" alt="image_of_a_badge" class="badge">
               <img src="Images/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.png" alt="image_of_baked_chicken" class="chicken">
+           </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero-wrap">
+           <div class="wrap1">
+             <button class="hot">
+              <img src="Images/image 14.png" alt="scroll-image">
+              <h4>Hot Recipes</h4>
+              </button>
+              <h2>Deliciously Braised Steak</h2>
+              <p> 
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim 
+              </p>
+
+              <div class="timer-fork">
+                <button class="timer">
+                  <i class="ri-timer-fill time"></i>
+                  <h4>45 Minutes</h4>
+                </button>
+                <button class="fork">
+                  <i class="ri-restaurant-fill utensils"></i>
+                  <h4>Steak</h4>
+                </button>
+              </div>
+              <div class="name-view">
+                <div class="name">
+                  <img src="Images/Ellipse 2(3).png" alt="man_image">
+                  <div class="name-wrap">
+                    <h4>Anna Kent</h4>
+                    <h5>18 February 2022</h5>
+                  </div>
+                </div>
+                <div class="view">
+                  <h3>View Recipes</h3>
+                  <i class="ri-play-circle-line"></i>
+                </div>
+              </div>
+           </div>
+           <div class="wrap2">
+              <img src="Images/Badge.png" alt="image_of_a_badge" class="badge">
+              <img src="Images/Rectangle(3).png" alt="image_of_cooked_steak" class="chicken">
            </div>
           </div>
         </div>
@@ -89,9 +109,9 @@
 
 
 
+  
 
-
-  <script src="script.js" defer></script>
-  <!-- <script src="package/swiper-bundle.min.js"></script> -->
+  <script src="script.js"></script> 
+  <script src="package/swiper-bundle.min.js"></script>
 </body>
 </html>
